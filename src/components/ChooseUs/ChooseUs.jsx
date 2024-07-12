@@ -28,7 +28,7 @@ function ChooseUs() {
 
           <div className="relative w-[50%] md1000:flex md1000:flex-col md1000:items-center md1000:text-center md1000:w-[85%]">
             <p className="text-white relative z-10 text-[16px] uppercase font-bold mb-14">
-              why choose us
+              por qué elegirnos
             </p>
             <img
               src={TitleRed}
@@ -36,15 +36,13 @@ function ChooseUs() {
               className="w-[22rem] absolute -top-[6px] -left-14 md1000:hidden "
             />
             <h2 className=" text-[3.6rem] text-white font-bold leading-[1.2] max-w-3xl md1000:max-w-[80%]">
-              We Can Give A Shape Of Your Body Here!
+            ¡Podemos dar una forma de su cuerpo aquí!
             </h2>
             <p className="text-[16.5px] text-[#b4b4b4] mt-7 max-w-3xl md1000:max-w-[80%]">
-              At <b>Gymate</b>, we are dedicated to helping you achieve the body
-              of your dreams. Our expert trainers and nutritionists will work
-              with you to create a personalized fitness and nutrition plan that
-              helps you reach your specific goals.
+              Nuestros expertos entrenadores y nutricionistas
+              con usted para crear un plan de fitness y nutrición personalizado que
+              te ayude a alcanzar tus objetivos específicos.
             </p>
-
             <div className="grid grid-cols-2 grid-rows-2 gap-14 max-w-[44rem] mt-14 min450:flex min450:flex-col">
               <div className="flex items-center gap-6">
                 <img
@@ -53,7 +51,7 @@ function ChooseUs() {
                   alt="icon"
                 />
                 <p className="text-white font-bold text-[18px] max-w-[150px]">
-                  Free Fitness Training
+                  Entrenamiento físico gratuito
                 </p>
               </div>
 
@@ -64,7 +62,7 @@ function ChooseUs() {
                   alt="icon"
                 />
                 <p className="text-white font-bold text-[18px] max-w-[150px]">
-                  Modern Gym Equipments
+                  Entrenamiento físico gratuito
                 </p>
               </div>
 
@@ -75,7 +73,7 @@ function ChooseUs() {
                   alt="icon"
                 />
                 <p className="text-white font-bold text-[18px] max-w-[150px]">
-                  Gym Bag Equipments
+                  Entrenamiento físico gratuito
                 </p>
               </div>
 
@@ -86,13 +84,13 @@ function ChooseUs() {
                   alt="icon"
                 />
                 <p className="text-white font-bold text-[18px] max-w-[150px]">
-                  Fresh Bottle Watter
+                  Entrenamiento físico gratuito
                 </p>
               </div>
               <MainButton
                 color={`!text-white`}
                 bg={`bg-[#595959]`}
-                text="our classes"
+                text="Nuestras clases"
                 arrowColor={`!text-white`}
                 cN="choose-cta"
                 hover={`hover:bg-[#ff0336]`}

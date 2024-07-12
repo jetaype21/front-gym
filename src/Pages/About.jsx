@@ -1,5 +1,5 @@
 import Footer from "../components/Footer/Footer";
-import GirlRunning from "../images/who-we-are/girl-run.png";
+import GirlAtletismo from "../images/who-we-are/girl-run.png";
 import GirlRedBg from "../images/who-we-are/girl-redbg.svg";
 import GirlText from "../images/who-we-are/girl-side-text.png";
 import GirlWind from "../images/who-we-are/wind.png";
@@ -16,7 +16,7 @@ function About() {
       <section className="login-section">
         <div className="login-banner relative justify-center flex">
           <h1 className="text-white absolute bottom-[25px] text-[3rem] font-bold">
-            About Us
+            Acerca
           </h1>
         </div>
         <div className="container page-padding py-[5rem]">
@@ -24,7 +24,7 @@ function About() {
             {/* title div -- */}
             <div className="flex flex-col !text-left relative items-right justify-center md1000:items-center md1000:!text-center">
               <p className="text-white relative z-10 text-[15px] uppercase font-bold mb-8 ml-20 md1000:ml-3 ">
-                who we are
+                quienes somos
               </p>
               <img
                 src={TitleRed}
@@ -33,19 +33,19 @@ function About() {
               />
 
               <h2 className="text-[3.6rem] max-w-[53rem] font-bold mb-4">
-                We Will Give You Strength and Health
+                Te daremos fuerza y salud
               </h2>
               <p className="text-[#646464] font-medium text-[15px] max-w-[50rem] ">
-                At Gymate, we are dedicated to helping you achieve the body of
-                your dreams. Our expert trainers and nutritionists will work
-                with you to create a personalized fitness and nutrition plan
-                that helps you reach your specific goals.
+                En Gymate, nos dedicamos a ayudarle a conseguir el cuerpo de
+                de sus sueños. Nuestros expertos entrenadores y nutricionistas
+                con usted para crear un plan de fitness y nutrición personalizado
+                que le ayude a alcanzar sus objetivos específicos.
               </p>
               <MainButton
                 color={`!text-white`}
                 bg={`bg-[#ff0336]`}
                 goTo="/contact"
-                text="contact us"
+                text="contactar"
                 arrowColor={`!text-white`}
                 cN="pricing-cta blog-cta"
               />
@@ -53,7 +53,7 @@ function About() {
             {/*  */}
             <div className="relative w-[80%] -top-[90px] left-[40px] md1000:hidden">
               <img
-                src={GirlRunning}
+                src={GirlAtletismo}
                 alt="girl_running"
                 className="girl-running"
               />
@@ -67,11 +67,9 @@ function About() {
             <div className="grid grid-cols-2 grid-rows-2 w-full min620:grid-cols-1">
               <div className="w-full bg-white h-[43rem] flex flex-col justify-center items-center text-center px-[100px] min800:px-[10px]">
                 <img src={Target} alt="target_img" className="w-[9rem]" />
-                <h2 className="text-[36px] font-bold mt-3">Our History</h2>
+                <h2 className="text-[36px] font-bold mt-3">Nuestra historia</h2>
                 <p className="text-[16px] font-medium text-[#646464] mt-5">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit
-                  Exercitation veniam consequat.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum blanditiis commodi quaerat harum tempora repellat. Eum sint, nam ducimus nisi perspiciatis cum, eaque voluptatem ex iusto officia ipsa sit velit.
                 </p>
               </div>
               {/*  */}
@@ -93,11 +91,8 @@ function About() {
               {/*  */}
               <div className="w-full bg-white h-[43rem] flex flex-col justify-center items-center text-center px-[100px] min800:px-[10px]">
                 <img src={Mountain} alt="target_img" className="w-[9rem]" />
-                <h2 className="text-[36px] font-bold mt-3">Our History</h2>
-                <p className="text-[16px] font-medium text-[#646464] mt-5">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit
-                  Exercitation veniam consequat.
+                <h2 className="text-[36px] font-bold mt-3">Nuestra historia</h2>
+                <p className="text-[16px] font-medium text-[#646464] mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, quod suscipit perspiciatis eum voluptatibus eius pariatur iusto recusandae, soluta quibusdam facilis. Voluptatem dicta exercitationem pariatur molestias, illo atque? Quasi, adipisci.
                 </p>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import TitleRed from "../../images/who-we-are/title-bg.svg";
-import TrainerBox from "./TrainerBox";
+import EncargadoBox from "./EncargadoBox";
 
-function Trainers() {
+function Encargados() {
   return (
     <>
       <section id="team" className="trainers-section">
@@ -9,7 +9,7 @@ function Trainers() {
           {/* title div -- */}
           <div className="flex flex-col items-center text-center relative">
             <p className="text-white relative z-10 text-[16px] uppercase font-bold mb-10">
-              gym trainers
+            entrenadores de gimnasio
             </p>
             <img
               src={TitleRed}
@@ -18,17 +18,17 @@ function Trainers() {
             />
 
             <h2 className="text-[3.4rem] font-bold mb-4">
-              Team Of Expert Coaches
+            Equipo de entrenadores expertos
             </h2>
             <p className="text-[#646464] font-medium text-[15px] ">
-              Expert team of coaches helps you succeed in any goal,
-              <br /> personalized guidance and motivation provided!
+              Un experto equipo de entrenadores te ayuda a conseguir cualquier objetivo,
+              <br /> orientación y motivación personalizadas
             </p>
           </div>
 
           {/* trainers div -- */}
           <div className="flex mt-20 ">
-            <TrainerBox />
+            <EncargadoBox />
           </div>
         </div>
       </section>
@@ -36,4 +36,4 @@ function Trainers() {
   );
 }
 
-export default Trainers;
+export default Encargados;

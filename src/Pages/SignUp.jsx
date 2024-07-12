@@ -6,7 +6,7 @@ import Footer from "../components/Footer/Footer";
 function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { user, signUp } = UserAuth();
+  const { signUp } = UserAuth();
   const navigate = useNavigate();
 
   const goTop = () => {
@@ -31,7 +31,7 @@ function Signup() {
       <section className="login-section ">
         <div className="login-banner relative justify-center flex">
           <h1 className="text-white absolute bottom-[25px] text-[3rem] font-bold">
-            Sign Up
+            Registrarme
           </h1>
         </div>
         {/* form  */}
@@ -64,7 +64,7 @@ function Signup() {
               type="submit"
               className="bg-[#ff0336] text-white py-4 font-medium text-[2rem] w-full mt-10"
             >
-              Sign Up
+              Registrarme
             </button>
             <div className="flex gap-4 items-center mt-16 min450:flex-col">
               <p className="text-white text-[1.5rem]">Already have account?</p>
@@ -72,13 +72,12 @@ function Signup() {
                 to="/login"
                 className="text-[#ff0336] font-bold text-[1.5rem]"
               >
-                Sign In
+                Iniciar Sesion
               </Link>
             </div>
             <p className="text-[#ffffffbc] text-[1.3rem] mt-5">
-              ( Make <span className="text-[#ff0336]">new Accout</span> or go to
-              <span className="text-[#ff0336]"> Sign In</span> Page for Test
-              Account )
+              ( Crea <span className="text-[#ff0336]">cuenta nuev</span> o quieres ir a
+              <span className="text-[#ff0336]"> Iniciar Sesion</span> )
             </p>
           </form>
         </div>

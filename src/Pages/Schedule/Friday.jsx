@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Friday() {
+function Viernes() {
   return (
     <>
       {/* fiter buttons */}
@@ -10,49 +10,49 @@ function Friday() {
           to="/schedule/monday"
           className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] hover:bg-[#ff0336] ease-in duration-200 hover:shadow-2xl hover:text-white "
         >
-          Monday
+          Lunes
         </Link>
 
         <Link
           to="/schedule/tuesday"
           className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] hover:bg-[#ff0336] ease-in duration-200 hover:shadow-2xl hover:text-white "
         >
-          Tuesday
+          Martes
         </Link>
 
         <Link
           to="/schedule/wednesday"
           className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] hover:bg-[#ff0336] ease-in duration-200 hover:shadow-2xl hover:text-white "
         >
-          Wednesday
+          Miercoles
         </Link>
 
         <Link
           to="/schedule/thursday"
           className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] hover:bg-[#ff0336] ease-in duration-200 hover:shadow-2xl hover:text-white "
         >
-          Thursday
+          Jueves
         </Link>
 
         <Link
           to="/schedule/friday"
           className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] bg-[#ff0336] ease-in duration-200 hover:shadow-2xl text-white "
         >
-          Friday
+          Viernes
         </Link>
 
         <Link
           to="/schedule/saturday"
           className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] hover:bg-[#ff0336] ease-in duration-200 hover:shadow-2xl hover:text-white "
         >
-          Saturday
+          Sabado
         </Link>
 
         <Link
           to="/schedule/sunday"
           className="text-[15px] font-bold border-solid border border-[#d7d7d7] py-[9px] px-[32px] rounded-[23px] hover:bg-[#ff0336] ease-in duration-200 hover:shadow-2xl hover:text-white "
         >
-          Sunday
+          Domingo
         </Link>
       </div>
 
@@ -67,25 +67,25 @@ function Friday() {
             {/* class name */}
             <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
               <p className="text-[14px] font-medium text-[#a0a0a0]">
-                Class Name
+                Nombre de la clase
               </p>
               <p className="text-[18px] text-black font-bold mt-3">Crossfit</p>
             </li>
             {/* time */}
             <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
-              <p className="text-[14px] font-medium text-[#a0a0a0]">Time</p>
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Tiempo</p>
               <p className="text-[18px] text-black font-bold mt-3">
                 9:00am - 10:00am
               </p>
             </li>
             {/* trainer */}
             <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
-              <p className="text-[14px] font-medium text-[#a0a0a0]">Trainer</p>
-              <p className="text-[18px] text-black font-bold mt-3">Mike Mich</p>
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Encargado</p>
+              <p className="text-[18px] text-black font-bold mt-3">Mike</p>
             </li>
             <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full text-right min800:text-center">
               <button className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#ff0336] ease-in duration-200 ">
-                Join Now
+                Unirme ahora
               </button>
             </li>
           </ul>
@@ -94,27 +94,27 @@ function Friday() {
             {/* class name */}
             <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
               <p className="text-[14px] font-medium text-[#a0a0a0]">
-                Class Name
+                Nombre de la clase
               </p>
               <p className="text-[18px] text-black font-bold mt-3">Karate</p>
             </li>
             {/* time */}
             <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
-              <p className="text-[14px] font-medium text-[#a0a0a0]">Time</p>
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Tiempo</p>
               <p className="text-[18px] text-black font-bold mt-3">
                 10:00pm - 11:00pm
               </p>
             </li>
             {/* trainer */}
             <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
-              <p className="text-[14px] font-medium text-[#a0a0a0]">Trainer</p>
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Encargado</p>
               <p className="text-[18px] text-black font-bold mt-3">
                 John Jones
               </p>
             </li>
             <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full text-right min800:text-center">
               <button className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#ff0336] ease-in duration-200 ">
-                Join Now
+                Unirme ahora
               </button>
             </li>
           </ul>
@@ -123,29 +123,29 @@ function Friday() {
             {/* class name */}
             <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
               <p className="text-[14px] font-medium text-[#a0a0a0]">
-                Class Name
+                Nombre de la clase
               </p>
               <p className="text-[18px] text-black font-bold mt-3">
-                Meditation
+                Meditacion
               </p>
             </li>
             {/* time */}
             <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
-              <p className="text-[14px] font-medium text-[#a0a0a0]">Time</p>
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Tiempo</p>
               <p className="text-[18px] text-black font-bold mt-3">
                 4:00pm - 5:00pm
               </p>
             </li>
             {/* trainer */}
             <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
-              <p className="text-[14px] font-medium text-[#a0a0a0]">Trainer</p>
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Encargado</p>
               <p className="text-[18px] text-black font-bold mt-3">
                 Lara Croft
               </p>
             </li>
             <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full text-right min800:text-center">
               <button className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#ff0336] ease-in duration-200 ">
-                Join Now
+                Unirme ahora
               </button>
             </li>
           </ul>
@@ -154,27 +154,27 @@ function Friday() {
             {/* class name */}
             <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full">
               <p className="text-[14px] font-medium text-[#a0a0a0]">
-                Class Name
+                Nombre de la clase
               </p>
               <p className="text-[18px] text-black font-bold mt-3">Workout</p>
             </li>
             {/* time */}
             <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
-              <p className="text-[14px] font-medium text-[#a0a0a0]">Time</p>
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Tiempo</p>
               <p className="text-[18px] text-black font-bold mt-3">
                 6:00pm - 7:00pm
               </p>
             </li>
             {/* trainer */}
             <li className="p-[25px] bg-[#f2f2f2] w-full text-center">
-              <p className="text-[14px] font-medium text-[#a0a0a0]">Trainer</p>
+              <p className="text-[14px] font-medium text-[#a0a0a0]">Encargado</p>
               <p className="text-[18px] text-black font-bold mt-3">
                 Lary Wheels
               </p>
             </li>
             <li className="py-[25px] px-[55px] bg-[#f2f2f2] w-full text-right min800:text-center">
               <button className="text-white text-[15px] font-medium bg-[#555] py-[10px] px-[20px] rounded-[30px] mt-3 hover:bg-[#ff0336] ease-in duration-200 ">
-                Join Now
+                Unirme ahora
               </button>
             </li>
           </ul>
@@ -184,4 +184,4 @@ function Friday() {
   );
 }
 
-export default Friday;
+export default Viernes;

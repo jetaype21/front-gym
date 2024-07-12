@@ -1,12 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { galleryImg } from "./GalleryFiles";
 import { Link } from "react-router-dom";
 
 function GalleryPage1() {
+
+  const [imagenesData, setImagenes] = useState([])
+  useEffect(() => {
+    const getData = async () => {
+      const response = await fetch('https://gym-solution-back.onrender.com/imagenes');
+      if (!response.ok) {
+        throw new Error('Error al obtener los imagenes');
+      }
+      const imagenes = await response.json();
+      setImagenes(imagenes)
+    }
+
+    getData()
+
+  }, [])
+
+
   const firstPageImgs = galleryImg.filter((item) => item.id <= 8);
   return (
     <>
       <div className="grid grid-cols-3 gap-7 md1000:grid-cols-2 min540:grid-cols-1">
+        {
+          imagenesData.length === 0 ? <p>Cargando imagegnes</p> : <>
+            {
+              imagenesData.map(item =>
+                <div>
+                  <img alt="gallery_img" className="w-full h-auto" src={item.url} />
+                </div>
+              )
+            }
+          </>
+        }
         {firstPageImgs.map((image) => (
           <div key={image.id}>
             <img alt="gallery_img" className="w-full h-auto" src={image.img} />
@@ -15,6 +43,7 @@ function GalleryPage1() {
       </div>
 
       <div className="flex justify-center gap-3 mt-32">
+
         <Link
           onClick={() => window.top(0, 0)}
           to="/gallery/page-1"

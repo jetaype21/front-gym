@@ -9,18 +9,18 @@ function BmiCalc() {
   let calcBmi = (e) => {
     e.preventDefault();
     if (weight === 0 || height === 0) {
-      alert("Please enter a valid weight and height");
+      alert("Introduzca un peso y una altura válidos");
     } else {
       let bmi = weight / ((height * height) / 10000);
       setBmi(bmi.toFixed(1));
 
       // logic for message
       if (bmi < 20) {
-        setMessage("Underweight");
+        setMessage("Bajo peso");
       } else if (bmi >= 20 && bmi < 27) {
         setMessage("Normal");
       } else {
-        setMessage("Overweight");
+        setMessage("Sobre peso");
       }
     }
   };
@@ -32,11 +32,11 @@ function BmiCalc() {
           <span className="w-full h-full absolute bg-transparent min620:bg-[#00000063] top-0 left-0"></span>
           <div className="text-white w-[52rem] min620:w-[100%] relative">
             <h2 className="text-[4rem] font-bold leading-[1.1] mb-8">
-              Let's Calculate Your <span className="text-[#FF0336]">BMI</span>
+              Calculemos su <span className="text-[#FF0336]">IMC</span>
             </h2>
             <p className="text-[16px] text-[#a1a1a1] min620:text-white">
-              Easily determine your body mass index with our accurate
-              calculation tool.
+              Determina fácilmente tu índice de masa corporal con nuestra precisa
+              herramienta de cálculo.
             </p>
             <div className="flex flex-col">
               <form className="flex w-full gap-6 h-[50px] mt-10 ">
@@ -44,23 +44,23 @@ function BmiCalc() {
                   onChange={(e) => setWeight(e.target.value)}
                   className="w-[50%] bg-transparent text-[14px] border-2 border-[#ffffff7d] pl-6 min450:bg-white min450:text-black"
                   type="text"
-                  placeholder="Weight / kg"
+                  placeholder="Peso / kg"
                 ></input>
                 <input
                   onChange={(e) => setHeight(e.target.value)}
                   className="w-[50%] bg-transparent text-[14px] border-2 border-[#ffffff7d] pl-6 min450:bg-white min450:text-black"
                   type="text"
-                  placeholder="Height / cm"
+                  placeholder="Altura / cm"
                 ></input>
               </form>
               {/* output */}
               <p className="mt-10 gap-3 text-[16px] font-medium flex items-center w-full ">
                 <span className="w-1/2">
-                  Your BMI is: &nbsp;
+                  Su IMC es: &nbsp;
                   <span className="text-[#ff0336]">{bmi}</span>
                 </span>
                 <span className="w-1/2">
-                  Your weight is: &nbsp;
+                  Su peso es: &nbsp;
                   <span className="text-[#ff0336]">{message}</span>
                 </span>
               </p>
@@ -70,7 +70,7 @@ function BmiCalc() {
                 type="submit"
                 className="text-[15px] uppercase font-bold mt-10 bg-[#323232] w-[15rem] h-[5rem] hover:bg-[#FF0336]"
               >
-                Calculate
+                Calcular
               </button>
             </div>
           </div>

@@ -16,7 +16,7 @@ function Testimonials() {
           {/* title */}
           <div className="text-center relative items-center w-full flex flex-col">
             <p className="text-white relative z-10 text-[16px] uppercase font-bold -mb-[10.5rem]">
-              Testimonials
+              Testimonios
             </p>
             <img
               alt="title_img"

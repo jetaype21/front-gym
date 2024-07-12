@@ -2,11 +2,7 @@ import TitleRed from "../../images/who-we-are/title-bg.svg";
 import MainButton from "../MainButton";
 
 function Featured() {
-  const goTop = () => {
-    window.scrollTo({
-      top: 0,
-    });
-  };
+  
   return (
     <>
       <section id="featured" className="page-padding py-[12.5rem] bg-white">
@@ -14,7 +10,7 @@ function Featured() {
           {/* title */}
           <div className="flex flex-col text-center items-center relative ">
             <p className="font-semibold text-white text-[15px] relative uppercase z-10 ">
-              OUR FEATURED CLASS
+            NUESTRA CLASE DESTACADA
             </p>
             <img
               src={TitleRed}
@@ -22,7 +18,7 @@ function Featured() {
               className="w-[24rem] absolute -top-[10px]"
             />
             <h2 className="text-[3.6rem] text-black font-bold my-10">
-              We Are Offering Best Flexible Classes
+            Ofrecemos las mejores clases flexibles
             </h2>
           </div>
           {/* grid */}
@@ -30,9 +26,9 @@ function Featured() {
             <div className="item-0-div relative">
               <div className="item-0 ease-in duration-[0.4s] p-6"></div>
               <div className="absolute z-10 bottom-10 left-10">
-                <p className="text-white text-[3rem] font-bold">Cycling</p>
+                <p className="text-white text-[3rem] font-bold">Piernas</p>
                 <p className="text-white bg-[#FF0336] text-[16px] mt-3 py-1 px-5">
-                  Wednesday: 9:00am-10:00am
+                  Miercoles: 9:00am-10:00am
                 </p>
               </div>
             </div>
@@ -42,7 +38,7 @@ function Featured() {
               <div className="absolute z-10 bottom-10 left-10">
                 <p className="text-white text-[3rem] font-bold">Karate</p>
                 <p className="text-white bg-[#FF0336] text-[16px] mt-3 py-1 px-5">
-                  Friday: 10:00am-11:00am
+                  Viernes: 10:00am-11:00am
                 </p>
               </div>
             </div>
@@ -52,7 +48,7 @@ function Featured() {
               <div className="absolute z-10 bottom-10 left-10">
                 <p className="text-white text-[3rem] font-bold">Power</p>
                 <p className="text-white bg-[#FF0336] text-[16px] mt-3 py-1 px-5">
-                  Saturday: 9:00am-10:00am
+                  Sabado: 9:00am-10:00am
                 </p>
               </div>
             </div>
@@ -60,9 +56,9 @@ function Featured() {
             <div className="item-3-div relative">
               <div className="item-3 ease-in duration-[0.4s] p-6"></div>
               <div className="absolute z-10 bottom-10 left-10">
-                <p className="text-white text-[3rem] font-bold">Meditation</p>
+                <p className="text-white text-[3rem] font-bold">Meditacion</p>
                 <p className="text-white bg-[#FF0336] text-[16px] mt-3 py-1 px-5">
-                  Friday: 1:00pm-2:00pm
+                  Viernes: 1:00pm-2:00pm
                 </p>
               </div>
             </div>
@@ -70,9 +66,9 @@ function Featured() {
             <div className="item-4-div relative">
               <div className="item-4 ease-in duration-[0.4s] p-6"></div>
               <div className="absolute z-10 bottom-10 left-10">
-                <p className="text-white text-[3rem] font-bold">Martial Arts</p>
+                <p className="text-white text-[3rem] font-bold">Artes marciales</p>
                 <p className="text-white bg-[#FF0336] text-[16px] mt-3 py-1 px-5">
-                  Sunday: 6:00pm-7:00pm
+                  Domingo: 6:00pm-7:00pm
                 </p>
               </div>
             </div>
@@ -80,9 +76,9 @@ function Featured() {
             <div className="item-5-div relative">
               <div className="item-5 ease-in duration-[0.4s] p-6"></div>
               <div className="absolute z-10 bottom-10 left-10">
-                <p className="text-white text-[3rem] font-bold">Workout</p>
+                <p className="text-white text-[3rem] font-bold">Entrenamiento</p>
                 <p className="text-white bg-[#FF0336] text-[16px] mt-3 py-1 px-5">
-                  Monday: 4:00pm-5:00pm
+                  Lunes: 4:00pm-5:00pm
                 </p>
               </div>
             </div>
@@ -94,12 +90,12 @@ function Featured() {
         <div className="container page-padding ">
           <div className="flex items-center md1000:flex-col md1000:gap-12  md1000:text-center">
             <h2 className="text-white font-bold text-[3.7rem] md1000:text-[3rem] max-w-6xl px-7 leading-[1.2] min450:text-[2.4rem] ">
-              We Are Always Providing Best Fitness Service For You
+            Siempre le ofrecemos el mejor servicio de fitness
             </h2>
             <MainButton
               color={`text-black`}
               bg={`bg-white`}
-              text="Join With Us"
+              text="Únete a nosotros"
               arrowColor={`text-black`}
               goTo="/contact"
             />

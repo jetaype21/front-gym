@@ -21,7 +21,7 @@ function NavList() {
           className=" cursor-pointer hover:text-[#ff0336]"
         >
           <Link onClick={goTop} to={"/about"}>
-            About
+            Acerca de nosotros
           </Link>
         </li>
         <li
@@ -29,7 +29,7 @@ function NavList() {
           className=" cursor-pointer hover:text-[#ff0336]"
         >
           <Link onClick={goTop} to={"/gallery/page-1"}>
-            Gallery
+            Fotos
           </Link>
         </li>
         <li
@@ -37,15 +37,7 @@ function NavList() {
           className=" cursor-pointer hover:text-[#ff0336]"
         >
           <Link onClick={goTop} to={"/schedule/monday"}>
-            Schedule
-          </Link>
-        </li>
-        <li
-          style={{ transition: "all 0.3s" }}
-          className=" cursor-pointer hover:text-[#ff0336]"
-        >
-          <Link onClick={goTop} to={"/blog"}>
-            Blog
+            Horarios
           </Link>
         </li>
         <li
@@ -53,15 +45,7 @@ function NavList() {
           className=" cursor-pointer hover:text-[#ff0336]"
         >
           <Link onClick={goTop} to={"/pricing"}>
-            Pricing
-          </Link>
-        </li>
-        <li
-          style={{ transition: "all 0.3s" }}
-          className=" cursor-pointer hover:text-[#ff0336]"
-        >
-          <Link onClick={goTop} to={"/classes"}>
-            Classes
+            Precios
           </Link>
         </li>
         <li
@@ -69,7 +53,7 @@ function NavList() {
           className=" cursor-pointer hover:text-[#ff0336]"
         >
           <Link onClick={goTop} to={"/contact"}>
-            Contact
+            Contactanos
           </Link>
         </li>
       </ul>

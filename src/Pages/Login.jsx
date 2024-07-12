@@ -6,7 +6,7 @@ import Footer from "../components/Footer/Footer";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { user, logIn } = UserAuth();
+  const { logIn } = UserAuth();
   const navigate = useNavigate();
   const [error, setError] = useState("");
 
@@ -34,7 +34,7 @@ function Login() {
       <section className="login-section">
         <div className="login-banner relative justify-center flex">
           <h1 className="text-white absolute bottom-[25px] text-[3rem] font-bold">
-            Sign In
+            Iniciar Sesion
           </h1>
         </div>
         {/* form  */}
@@ -45,7 +45,7 @@ function Login() {
           >
             {error ? (
               <p className="text-white bg-[#ff0336] font-bold text-[1.6rem] px-10 py-5 text-center mb-10">
-                Wrong email or password
+                Correo electrónico o contraseña incorrectos
               </p>
             ) : null}
             <label className="text-[2rem] text-white mb-3 font-medium ">
@@ -72,7 +72,7 @@ function Login() {
               type="submit"
               className="bg-[#ff0336] text-white py-4 font-medium text-[2rem] w-full mt-10"
             >
-              Sign In
+              Iniciar Sesion
             </button>
             <div className="flex gap-4 items-center mt-16 min450:flex-col">
               <p className="text-white text-[1.5rem]">New to Gymate?</p>
@@ -80,7 +80,7 @@ function Login() {
                 to="/signup"
                 className="text-[#ff0336] font-bold text-[1.5rem]"
               >
-                Sign Up
+                Registrarme
               </Link>
             </div>
             <p className="text-[#ffffffbc] text-[1.4rem] mt-3">

@@ -56,9 +56,8 @@ function Navbar() {
   return (
     <>
       <nav
-        className={`flex flex-row bg-transparent items-center justify-between py-8 px-12  fixed top-0 left-0 right-0 w-full z-50 ${
-          sticky ? "shadow-xl !bg-black" : ""
-        }`}
+        className={`flex flex-row bg-transparent items-center justify-between py-8 px-12  fixed top-0 left-0 right-0 w-full z-50 ${sticky ? "shadow-xl !bg-black" : ""
+          }`}
       >
         <Link to="/">
           <img
@@ -77,9 +76,8 @@ function Navbar() {
 
             {/* hamburger menu */}
             <div
-              className={`flex top-0 flex-col fixed w-full left-0 h-screen bg-white z-[9999999999] py-[60px] px-[40px] ease-in-out duration-500  ${
-                hamburger ? "left-0" : "-left-[100%]"
-              }`}
+              className={`flex top-0 flex-col fixed w-full left-0 h-screen bg-white z-[9999999999] py-[60px] px-[40px] ease-in-out duration-500  ${hamburger ? "left-0" : "-left-[100%]"
+                }`}
             >
               <i
                 onClick={hamburgerMenu}
@@ -103,7 +101,7 @@ function Navbar() {
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     to="/about"
                   >
-                    About
+                    Acerca de nosotros
                   </Link>
                 </li>
                 <li onClick={hamburgerMenu}>
@@ -112,7 +110,7 @@ function Navbar() {
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     to="/schedule/monday"
                   >
-                    Schedule
+                    Horarios
                   </Link>
                 </li>
                 <li onClick={hamburgerMenu}>
@@ -121,7 +119,7 @@ function Navbar() {
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     to="/gallery/page-1"
                   >
-                    Gallery
+                    Galerias
                   </Link>
                 </li>
                 <li onClick={hamburgerMenu}>
@@ -139,7 +137,7 @@ function Navbar() {
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     to="/contact"
                   >
-                    Contact
+                    Contactanos
                   </Link>
                 </li>
                 <li onClick={hamburgerMenu}>
@@ -148,7 +146,7 @@ function Navbar() {
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     to="/pricing"
                   >
-                    Pricing
+                    Precios
                   </Link>
                 </li>
                 <li onClick={hamburgerMenu}>
@@ -157,7 +155,7 @@ function Navbar() {
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
                     to="/classes"
                   >
-                    Classes
+                    Clases
                   </Link>
                 </li>
               </ul>
@@ -167,9 +165,8 @@ function Navbar() {
 
             <div>
               <div
-                className={`flex flex-col fixed w-[40rem] min450:w-full h-[100vh] bg-white top-0 left-0 z-[9999999999] p-[45px] gap-24 overflow-x-hidden ease-in-out duration-[0.5s] ${
-                  sidebar ? "left-0" : "-left-[100%]"
-                }`}
+                className={`flex flex-col fixed w-[40rem] min450:w-full h-[100vh] bg-white top-0 left-0 z-[9999999999] p-[45px] gap-24 overflow-x-hidden ease-in-out duration-[0.5s] ${sidebar ? "left-0" : "-left-[100%]"
+                  }`}
               >
                 {/* logo & X */}
                 <div className="flex justify-between items-center">
@@ -181,17 +178,17 @@ function Navbar() {
                 </div>
                 {/* about us */}
                 <div className="flex flex-col gap-6">
-                  <h3 className="text-[2rem] font-bold">About Us</h3>
+                  <h3 className="text-[2rem] font-bold">Acerca de nosotros</h3>
                   <p className="text-[1.6rem] font-medium text-[#000000b1]">
-                    Find out who we are and what makes us unique. We are a
-                    community-driven gym committed to providing personalized
-                    fitness experiences for all levels of fitness enthusiasts in
-                    a welcoming and supportive environment.
+                    Descubra quiénes somos y qué nos hace únicos. Somos un
+                    un gimnasio impulsado por la comunidad y comprometido
+                    para todos los niveles de entusiastas del fitness en un
+                    en un ambiente acogedor y de apoyo.
                   </p>
                 </div>
                 {/* gallery */}
                 <div className="flex flex-col gap-6">
-                  <h3 className="text-[2rem] font-bold">Gallery</h3>
+                  <h3 className="text-[2rem] font-bold">Galeria</h3>
                   <div className="grid grid-cols-3 grid-rows-2 gap-4">
                     <img
                       src={SideImg1}
@@ -227,23 +224,23 @@ function Navbar() {
                 </div>
                 {/* contact */}
                 <div className="flex flex-col gap-6">
-                  <h3 className="text-[2rem] font-bold">Contact Info</h3>
+                  <h3 className="text-[2rem] font-bold">Informarion de contacto</h3>
                   <p className="text-[1.6rem] font-medium text-[#000000b1] hover:text-[#ff0336] cursor-pointer ease-in duration-200">
                     <i className="fa-solid fa-location-dot text-[#ff0336]"></i>
-                    &nbsp; 59 Street, House Newyork City
+                    &nbsp; Grau, Lima
                   </p>
                   <p className="text-[1.6rem] font-medium text-[#000000b1] hover:text-[#ff0336] cursor-pointer ease-in duration-200">
                     <i className="fa-solid fa-phone text-[#ff0336]"></i>&nbsp;
-                    +123-678800090
+                    +51 987654321
                   </p>
                   <p className="text-[1.6rem] font-medium text-[#000000b1] hover:text-[#ff0336] cursor-pointer ease-in duration-200">
                     <i className="fa-solid fa-envelope text-[#ff0336]"></i>
-                    &nbsp; gymate@gymail.com
+                    &nbsp; gym-juan@gmail.com
                   </p>
                 </div>
                 {/* follow us */}
                 <div className="flex flex-col gap-6">
-                  <h3 className="text-[2rem] font-bold">Follow Us</h3>
+                  <h3 className="text-[2rem] font-bold">Siguenos en</h3>
                   <div className="flex gap-5">
                     <span className="bg-[#ff0336] rounded-full py-[12px] px-[17px] cursor-pointer">
                       <i className="fa-brands fa-facebook-f text-[2.2rem] text-white"></i>
@@ -284,12 +281,11 @@ function Navbar() {
               className="flex items-center "
             >
               <i
-                className={`fa-solid fa-plus bg-[#FF0336] text-white text-2xl py-3 px-4 rounded-md ${
-                  spin ? "nav-btn-hover" : ""
-                }`}
+                className={`fa-solid fa-plus bg-[#FF0336] text-white text-2xl py-3 px-4 rounded-md ${spin ? "nav-btn-hover" : ""
+                  }`}
               ></i>
               <h3 className="text-white text-[14px] font-bold uppercase ml-4 mr-8 tracking-wider">
-                join class now
+                Unete a clases ahora
               </h3>
             </Link>
           </div>

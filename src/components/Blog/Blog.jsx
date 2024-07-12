@@ -9,7 +9,7 @@ function Blog() {
           {/* title div -- */}
           <div className="flex flex-col text-center relative items-center">
             <p className="text-white relative z-10 text-[15px] uppercase font-bold mb-8">
-              latest blog
+              Ultimas publicaciones
             </p>
             <img
               src={TitleRed}
@@ -17,10 +17,10 @@ function Blog() {
               className="w-[23rem] absolute -top-[10px]"
             />
 
-            <h2 className="text-[3.4rem] font-bold mb-4">Our Recent News</h2>
+            <h2 className="text-[3.4rem] font-bold mb-4">Noticias recientes</h2>
             <p className="text-[#646464] font-medium text-[15px] ">
-              Gymat an unknown printer took a galley of type and scrambled
-              <br /> make a type specimen book.
+              Gymat un impresor desconocido tomó una galera de tipos y revolvió
+              <br /> hacer un muestrario de tipos.
             </p>
           </div>
 
@@ -29,20 +29,20 @@ function Blog() {
             <BlogBox
               bgClass="box1Bg"
               date="22.03.2022"
-              title="Yoga For Everyone in 2023"
-              description="This is program designed to make the practice of yoga beneficial for people of all ages, abilities, and backgrounds. "
+              title="Conozca a Grace, embajadora de la buena forma física"
+              description="Se trata de un programa diseñado para que la práctica del yoga resulte beneficiosa para personas de todas las edades, capacidades y procedencias."
             />
             <BlogBox
               bgClass="box2Bg"
               date="13.09.2022"
-              title="Getting Back Into CrossFit After Vacation"
-              description="Learn how to ease back into your CrossFit routine after a vacation with tips and strategies for success."
+              title="Conozca a Grace, embajadora de la buena forma física"
+              description="Se trata de un programa diseñado para que la práctica del yoga resulte beneficiosa para personas de todas las edades, capacidades y procedencias."
             />
             <BlogBox
               bgClass="box3Bg"
               date="28.06.2022"
-              title="Meet Fitness Ambassador Grace"
-              description="Get to know Grace, a fitness enthusiast and dedicated ambassador who is passionate about helping others reach their fitness goals."
+              title="Conozca a Grace, embajadora de la buena forma física"
+              description="Se trata de un programa diseñado para que la práctica del yoga resulte beneficiosa para personas de todas las edades, capacidades y procedencias."
             />
           </div>
         </div>

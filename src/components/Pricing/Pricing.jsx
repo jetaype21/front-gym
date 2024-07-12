@@ -6,8 +6,26 @@ import PricingBox from "./PricingBox";
 import Img1 from "../../images/pricing/img1.jpg";
 import Img2 from "../../images/pricing/img2.jpg";
 import Img3 from "../../images/pricing/img3.jpg";
+import { useEffect, useState } from "react";
 
 function Pricing() {
+  const imagenes = [Img1, Img2, Img3]
+  const [precios, setPrecios] = useState([])
+
+  useEffect(() => {
+    const getData = async () => {
+      const response = await fetch('https://gym-solution-back.onrender.com/precios');
+      if (!response.ok) {
+        throw new Error('Error al obtener los precios');
+      }
+      const precios = await response.json();
+      setPrecios(precios)
+    }
+
+    getData()
+
+  }, [])
+
   return (
     <>
       <section id="pricing" className="pricing-section relative">
@@ -16,7 +34,7 @@ function Pricing() {
           {/* title div -- */}
           <div className="flex flex-col text-center relative items-center">
             <p className="text-white relative z-10 text-[15px] uppercase font-bold mb-8">
-              PRICING CHART
+              Grafico de precios
             </p>
             <img
               src={TitleRed}
@@ -25,18 +43,26 @@ function Pricing() {
             />
 
             <h2 className="text-[3.4rem] font-bold mb-4">
-              Exclusive Pricing Plan
+              Planes exclusivos
             </h2>
             <p className="text-[#646464] font-medium text-[15px] ">
-              Gymat an unknown printer took a galley of type and scrambled
-              <br /> make a type specimen book.
+              Gymat el gimnasio que viene para transformarte
+
+              <br /> Empieza con nuestros siguientes planes
             </p>
           </div>
           {/* pricing boxes */}
           <div className="flex gap-10 mt-32 relative z-[2] md1000:flex-col md1000:items-center ">
-            <PricingBox img={Img1} price="39" />
-            <PricingBox img={Img2} price="65" />
-            <PricingBox img={Img3} price="100" />
+            {
+              precios.length === 0 ?
+                <p>cargando precios</p>
+                :
+                <>
+                  {precios.map((precio, index) =>
+                    <PricingBox img={imagenes[index]} price={precio.precio} price_name={precio.nombre_plan} plan_features={precio.features} />
+                  )}
+                </>
+            }
           </div>
           <img
             src={BgDumbell}

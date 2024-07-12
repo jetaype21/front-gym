@@ -1,11 +1,11 @@
-import Trainer1 from "../../images/trainers/trainer1.png";
-import Trainer2 from "../../images/trainers/trainer2.png";
-import Trainer3 from "../../images/trainers/trainer3.png";
-import TrainerBg from "../../images/trainers/trainer-bg.png";
+import Encargado1 from "../../images/trainers/trainer1.png";
+import Encargado2 from "../../images/trainers/trainer2.png";
+import Encargado3 from "../../images/trainers/trainer3.png";
+import EncargadoBg from "../../images/trainers/trainer-bg.png";
 import Shape from "../../images/trainers/shape.png";
 import { useState } from "react";
 
-function TrainerBox() {
+function EncargadoBox() {
   const [imgHover, setImgHover] = useState(false);
 
   const hoverBox = () => {
@@ -17,9 +17,9 @@ function TrainerBox() {
   };
 
   const trainers = [
-    { img: Trainer1, name: "John Lewis", job: "Yoga Trainer" },
-    { img: Trainer2, name: "Jonathan Doe", job: "Crossfit Trainer" },
-    { img: Trainer3, name: "Ana June", job: "Personal Trainer" },
+    { img: Encargado1, name: "John", job: "Encargado YOGA" },
+    { img: Encargado2, name: "Jonathan", job: "Encargado CROSSFIT" },
+    { img: Encargado3, name: "Ana", job: "Encargado PERSONAL" },
   ];
 
   return (
@@ -47,7 +47,7 @@ function TrainerBox() {
             {/* trainer bg */}
             <img
               style={{ transition: "all 0.3s" }}
-              src={TrainerBg}
+              src={EncargadoBg}
               alt="trainer_background"
               className={`absolute top-[4px] w-full scale-[1] `}
             />
@@ -77,4 +77,4 @@ function TrainerBox() {
   );
 }
 
-export default TrainerBox;
+export default EncargadoBox;
