@@ -2,7 +2,7 @@ import { useState } from "react";
 import Logo from "../../images/logo/logo.svg";
 import NavList from "../Nav/NavList";
 import { Link } from "react-router-dom";
-import LogoSide from "../../images/logo/logo-footer.svg";
+import LogoSide from "../../images/logo/logo.png";
 import SideImg1 from "../../images/sidebar/1.jpg";
 import SideImg2 from "../../images/sidebar/2.jpg";
 import SideImg3 from "../../images/sidebar/3.jpg";
